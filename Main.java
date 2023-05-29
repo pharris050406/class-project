@@ -1,6 +1,12 @@
+import java.util.Scanner;
+
 public class Main{
     public static void main(String[] args) {
-        MagicCarpet m = new MagicCarpet("w", 25.0, 25.0);
-        m.travel("Abu");
-        }
+        Scanner scanner = new Scanner(System.in);
+        MagicCarpet m = new MagicCarpet();
+        System.out.println("Enter a location to travel to");
+        String location = scanner.nextLine();
+        m.travel(location);
+        scanner.close();
+    }
 }
